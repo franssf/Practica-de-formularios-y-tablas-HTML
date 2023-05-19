@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Prueba formulario 1</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <!-- action es el destino y method es el metodo; el cual puede ser POST o GET -->
+        <form action="" method="GET">
+            <h1>Formulario de registro</h1>
+            <label>Nombre:</label>
+            <input id="name" type="text" name="nombre" maxlength="50"><br><br>
+            <label>Apellido:</label>
+            <input id="lastname" type="text" name="apellido" maxlength="50"><br><br>
+            <label>Sexo</label>
+            <input type="radio" name="Sexo" value="h"><label>Hombre</label>            
+            <input type="radio" name="Sexo" value="m"><label>Mujer</label><br><br>
+            <label>Correo:</label>
+            <input id="email" type="text" name="correo" maxlength="100"><br><br>
+            <label>Contraseña:</label>
+            <input id="password" type="password" name="contraseña" maxlength="50"><br><br>
+            <label id="poblacion">Población:</label>
+            <select id="opcionpais" name="opcionpais">
+                <option id="none">Indique la población</option>
+                <option id="Argentina">Argentina</option>
+                <option id="Estados Unidos">Estados Unidos</option>
+                <option id="Francia">Francia</option>
+                <option id="Nueva Zelanda">Nueva Zelanda</option>
+                <option id="Mexico">México</option>
+            </select><br><br>
+            <label id="description">Descripción:</label><br>
+            <textarea name="descrip" rows="5" cols="40" style="resize: none;"></textarea><br><br>
+            
+
+            <input id="recibirinfo" type="checkbox" name="recibirinfo" checked="checked">
+            <label>Deseo recibir información</label><br><br>
+            <input id="declaro" type="checkbox" name="declaro" checked="checked">
+            <label>Declaro haber leido términos y condiciones</label><br><br>
+            <button id="enviar" type="submit">Enviar</button>
+            
+            <!-- tambien se puede usar
+            <input type="submit" value="enviar"/>
+            -->
+
+        </form>
+    </body>
+</html>
